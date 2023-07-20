@@ -5,7 +5,6 @@ const Message = ({ msg }: {msg: any}): JSX.Element => {
     const selfSend = msg.sender.self; 
     const msgText = msg.message;
     const profilePic = msg.sender.image;
-    console.log(msg);
   return (
     <div>
       {  !selfSend  ?
