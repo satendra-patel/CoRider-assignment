@@ -12,7 +12,7 @@ const Chat: React.FC = () => {
   const getData = async() => {
     
     const response = await axios.get(`https://qa.corider.in/assignment/chat?page=${top}`)
-    setMessages((prevChats) => [...prevChats, ...response.data.chats]);
+    setMessages((prevChats: any) => [...prevChats, ...response.data.chats]);
    
     setDate(response.data.chats[0].time);
 
@@ -28,18 +28,18 @@ const Chat: React.FC = () => {
   const timeString = date;
   console.log(date);
 
-// Step 1: Create a Date object from the timeString
+
 const dateObj = new Date(timeString);
 
-// Step 2: Extract the date components (year, month, day)
+
 const year = dateObj.getFullYear();
-const month = dateObj.getMonth() ; // Months are zero-based, so we add 1
+const month = dateObj.getMonth() ; 
 const day = dateObj.getDate();
 
-// Step 3: Format the date in a desired format (e.g., YYYY-MM-DD)
+
 const formattedDate = `${day.toString().padStart(2, '0')}-${month.toString().padStart(2, '0')}-${year}`;
 
-console.log(formattedDate); // Output: "2023-07-20"
+console.log(formattedDate);
   
   return (
     <Flex bg="#FAF9F4" flexDir="column" mt="10rem" mb="1rem" gap="5">

@@ -1,9 +1,9 @@
-import React,{useState,useEffect} from "react";
+import {useState,useEffect} from "react";
 import { Flex, Heading, Button, IconButton, Text } from "@chakra-ui/react";
 import { ArrowBackIcon, EditIcon } from "@chakra-ui/icons";
 import axios from 'axios';
 
-import { BsThreeDotsVertical } from "react-icons/bs"
+
 import ThreeDotpopup from './ThreeDotpopup';
 
 const Header: React.FC = () => {
