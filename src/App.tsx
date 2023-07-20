@@ -5,7 +5,7 @@ import Chat from './components/Chat'
 import Sendbox from './components/Sendbox'
 import { Box } from '@chakra-ui/react'
 
-const App: React.FC = () => {
+const App : React.FC = () => {
 
   return (
     

@@ -3,6 +3,7 @@ import { Flex, Heading, Button, IconButton, Text } from "@chakra-ui/react";
 import { ArrowBackIcon, EditIcon } from "@chakra-ui/icons";
 
 import { BsThreeDotsVertical } from "react-icons/bs"
+import ThreeDotpopup from './ThreeDotpopup';
 
 const Header: React.FC = () => {
   return (
@@ -48,13 +49,13 @@ const Header: React.FC = () => {
 
       </Flex>
 
-     
-      <IconButton 
+      <ThreeDotpopup/>
+      {/* <IconButton 
         aria-label="Menu" 
         bg="#FAF9F4" 
         borderRadius="2rem"
         icon={ <BsThreeDotsVertical size="1.5rem"/> }
-      />
+      /> */}
  
     </Flex>
 

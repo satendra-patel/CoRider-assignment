@@ -1,14 +1,15 @@
-import {} from '@chakra-ui/react'
+import {Portal ,Button } from '@chakra-ui/react'
 import { Flex, Input, IconButton } from '@chakra-ui/react'
 import { AttachmentIcon } from '@chakra-ui/icons'
 import { VscSend } from 'react-icons/vsc'
 
 
 
+import PopUp from './PopUp'
+import { useState } from 'react'
 
 
 const Sendbox: React.FC = () => {
-
  
   
   return (
@@ -17,9 +18,9 @@ const Sendbox: React.FC = () => {
           <Flex bg="white" borderRadius="1rem" p="0" position="relative" bottom="0" width="100%"  gap="1" justify="space-between" alignItems="center" >
         
           <Input boxShadow="white" bg="white" type='text' name='msg' placeholder='Reply' border="none"/>
-          <IconButton bg="white" aria-label='Send Message' icon={ <AttachmentIcon fontSize="1.5rem"/> }>
-          </IconButton>
-         
+          
+          
+          <PopUp  />
           <IconButton bg="white" aria-label='Send Message' icon={ <VscSend size="1.5rem" strokeWidth="0.015em" /> }>
           </IconButton>
           
@@ -32,4 +33,4 @@ const Sendbox: React.FC = () => {
   )
 }
 
-export default Sendbox
+export default Sendbox;
