@@ -1,12 +1,12 @@
-import {Portal ,Button } from '@chakra-ui/react'
+
 import { Flex, Input, IconButton } from '@chakra-ui/react'
-import { AttachmentIcon } from '@chakra-ui/icons'
+
 import { VscSend } from 'react-icons/vsc'
 
 
 
 import PopUp from './PopUp'
-import { useState } from 'react'
+
 
 
 const Sendbox: React.FC = () => {

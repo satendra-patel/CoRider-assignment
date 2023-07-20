@@ -2,17 +2,16 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  PopoverHeader,
+ 
   PopoverBody,
-  PopoverFooter,
+ 
   PopoverArrow,
-  PopoverCloseButton,
-  PopoverAnchor,
+ 
 } from '@chakra-ui/react';
 
-  import { AttachmentIcon ,EmailIcon} from '@chakra-ui/icons';
-  import {  IconButton ,Button ,Portal,Icon} from '@chakra-ui/react'
-import React from 'react'
+  import { AttachmentIcon } from '@chakra-ui/icons';
+  import {  IconButton ,Button ,Portal} from '@chakra-ui/react'
+
 
 const PopUp: React.FC = () => {
    
@@ -30,7 +29,7 @@ const PopUp: React.FC = () => {
           <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-video"></i></Button>
           <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-file"></i></Button>
           </PopoverBody>
-          {/* <PopoverFooter>This is the footer</PopoverFooter> */}
+        
         </PopoverContent>
       </Portal>
     </Popover>

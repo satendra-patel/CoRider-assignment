@@ -2,18 +2,17 @@ import {
     Popover,
     PopoverTrigger,
     PopoverContent,
-    PopoverHeader,
+   
     PopoverBody,
-    PopoverFooter,
+ 
     PopoverArrow,
-    PopoverCloseButton,
-    PopoverAnchor,
+   
   } from '@chakra-ui/react';
   import { BsThreeDotsVertical } from "react-icons/bs"
   
-    import { AttachmentIcon } from '@chakra-ui/icons';
-    import {  IconButton ,Button ,Portal} from '@chakra-ui/react'
-  import React from 'react'
+    
+    import {  IconButton } from '@chakra-ui/react'
+  
   
   const ThreeDotpopup: React.FC = () => {
      
@@ -28,9 +27,9 @@ import {
       />
         </PopoverTrigger>
         <PopoverContent>
-          {/* <PopoverHeader fontWeight='semibold'>Popover placement</PopoverHeader> */}
+      
           <PopoverArrow />
-          {/* <PopoverCloseButton /> */}
+        
           <PopoverBody>
           <i class="fas fa-users"> Members</i> 
           <br /><hr/>
