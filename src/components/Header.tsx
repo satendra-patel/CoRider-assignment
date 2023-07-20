@@ -25,15 +25,13 @@ const Header: React.FC = () => {
   }
   window.onscroll = function() {
     if(window.pageYOffset === 0) {
-        nextTopReached(top)
+        nextTopReached(top+1)
     }
   }
   useEffect(() => {
     getDetail();
   }, [top])
-  console.log(name);
-  console.log(sender);
-  console.log(reciever);
+ 
 
 
 
