@@ -23,12 +23,12 @@ const PopUp: React.FC = () => {
           </IconButton>
       </PopoverTrigger>
       <Portal>
-        <PopoverContent bg="#008000" color="white"  size='50px' alignItems='centre' >
+        <PopoverContent bg="#008000" color="white"  maxW="195px" maxH="200px"  >
           <PopoverArrow />
           <PopoverBody >
-          <Button colorScheme='white' variant='outline'><i class="fas fa-camera"></i></Button>
-          <Button colorScheme='white' variant='outline'><i class="fas fa-video"></i></Button>
-          <Button colorScheme='white' variant='outline'><i class="fas fa-file"></i></Button>
+          <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-camera"></i></Button>
+          <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-video"></i></Button>
+          <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-file"></i></Button>
           </PopoverBody>
           {/* <PopoverFooter>This is the footer</PopoverFooter> */}
         </PopoverContent>
