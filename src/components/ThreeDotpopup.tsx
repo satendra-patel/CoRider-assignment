@@ -8,6 +8,9 @@ import {
     PopoverArrow,
    
   } from '@chakra-ui/react';
+  import { Icon } from "@chakra-ui/react";
+import { FaUsers, FaPhone, FaTimes } from "react-icons/fa";
+import { Text, Divider } from "@chakra-ui/react";
   import { BsThreeDotsVertical } from "react-icons/bs"
   
     
@@ -31,11 +34,17 @@ import {
           <PopoverArrow />
         
           <PopoverBody>
-          <i class="fas fa-users"> Members</i> 
-          <br /><hr/>
-          <i class="fas fa-phone"> Share Number</i> 
-          <br/><hr/>
-          <i class='fas fa-times'> Report</i>
+          <Text>
+        <Icon as={FaUsers} /> Members
+      </Text>
+      <Divider />
+      <Text>
+        <Icon as={FaPhone} /> Share Number
+      </Text>
+      <Divider />
+      <Text>
+        <Icon as={FaTimes} /> Report
+      </Text>
           </PopoverBody>
         </PopoverContent>
       </Popover>

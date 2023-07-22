@@ -10,7 +10,8 @@ import {
 } from '@chakra-ui/react';
 
   import { AttachmentIcon } from '@chakra-ui/icons';
-  import {  IconButton ,Button ,Portal} from '@chakra-ui/react'
+  import { FaCamera,FaVideo,FaFile} from "react-icons/fa";
+  import {  IconButton ,Button ,Portal,Icon} from '@chakra-ui/react'
 
 
 const PopUp: React.FC = () => {
@@ -25,9 +26,9 @@ const PopUp: React.FC = () => {
         <PopoverContent bg="#008000" color="white"  maxW="195px" maxH="200px"  >
           <PopoverArrow />
           <PopoverBody >
-          <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-camera"></i></Button>
-          <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-video"></i></Button>
-          <Button colorScheme='white' variant='outline' margin="0.2rem"><i class="fas fa-file"></i></Button>
+          <Button colorScheme='white' variant='outline' margin="0.2rem"><Icon as={FaCamera} /></Button>
+          <Button colorScheme='white' variant='outline' margin="0.2rem">  <Icon as={FaVideo} /></Button>
+          <Button colorScheme='white' variant='outline' margin="0.2rem"><Icon as={FaFile}/></Button>
           </PopoverBody>
         
         </PopoverContent>
