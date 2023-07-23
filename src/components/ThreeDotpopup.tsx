@@ -8,7 +8,7 @@ import {
     PopoverArrow,
    
   } from '@chakra-ui/react';
-  import { Icon } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/react";
 import { FaUsers, FaPhone, FaTimes } from "react-icons/fa";
 import { Text, Divider } from "@chakra-ui/react";
   import { BsThreeDotsVertical } from "react-icons/bs"

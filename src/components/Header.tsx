@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 
   const getDetail = async() => {
     
-    const response = await axios.get(`https://qa.corider.in/assignment/chat?page=${top}`)
+    const response = await axios.get(`https://qa.corider.in/assignment/chat?page=0`)
     console.log(response.data.from);
     setName(response.data.name);
     setReciever(response.data.to);
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   }
   window.onscroll = function() {
     if(window.pageYOffset === 0) {
-        nextTopReached(top+1)
+        nextTopReached(top)
     }
   }
   useEffect(() => {
